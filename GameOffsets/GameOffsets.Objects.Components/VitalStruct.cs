@@ -39,4 +39,13 @@ public struct VitalStruct
 		}
 		return (int)Math.Round(100.0 * (double)Current / (double)Unreserved);
 	}
+
+	public int ReservedInPercent()
+	{
+		if (Total == 0)
+		{
+			return 0;
+		}
+		return (int)Math.Round(100.0 * (double)ReservedTotal / (double)Total);
+	}
 }

@@ -13,21 +13,21 @@ public struct AreaInstanceOffsets
 	[FieldOffset(236)]
 	public uint CurrentAreaHash;
 
-	[FieldOffset(1832)]
+	[FieldOffset(1952)]
 	public StdVector Environments;
 
-	[FieldOffset(1880)]
+	[FieldOffset(2000)]
 	public IntPtr ServerDataPtr;
 
-	[FieldOffset(1888)]
+	[FieldOffset(2008)]
 	public IntPtr LocalPlayerPtr;
 
-	[FieldOffset(2064)]
+	[FieldOffset(2184)]
 	public StdMap AwakeEntities;
 
-	[FieldOffset(2080)]
+	[FieldOffset(2200)]
 	public StdMap SleepingEntities;
 
-	[FieldOffset(2464)]
+	[FieldOffset(2600)]
 	public TerrainStruct TerrainMetadata;
 }

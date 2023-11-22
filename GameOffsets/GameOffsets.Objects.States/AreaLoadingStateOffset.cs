@@ -9,9 +9,9 @@ public struct AreaLoadingStateOffset
 	[FieldOffset(200)]
 	public int IsLoading;
 
-	[FieldOffset(872)]
+	[FieldOffset(896)]
 	public uint TotalLoadingScreenTimeMs;
 
-	[FieldOffset(936)]
+	[FieldOffset(960)]
 	public StdWString CurrentAreaName;
 }

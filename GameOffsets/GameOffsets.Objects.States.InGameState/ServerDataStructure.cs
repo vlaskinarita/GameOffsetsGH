@@ -6,8 +6,8 @@ namespace GameOffsets.Objects.States.InGameState;
 [StructLayout(LayoutKind.Explicit, Pack = 1)]
 public struct ServerDataStructure
 {
-	public const int SKIP = 39168;
+	public const int SKIP = 40704;
 
-	[FieldOffset(1224)]
+	[FieldOffset(744)]
 	public StdVector PlayerInventories;
 }

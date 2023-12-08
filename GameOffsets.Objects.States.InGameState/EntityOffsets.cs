@@ -12,9 +12,9 @@ public struct EntityOffsets
 	[FieldOffset(48)]
 	public StdVector UnknownListPtr;
 
-	[FieldOffset(96)]
+	[FieldOffset(144)]
 	public uint Id;
 
-	[FieldOffset(112)]
+	[FieldOffset(148)]
 	public byte IsValid;
 }

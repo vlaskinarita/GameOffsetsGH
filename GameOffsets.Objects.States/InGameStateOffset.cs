@@ -11,9 +11,9 @@ public struct InGameStateOffset
 	[FieldOffset(120)]
 	public nint WorldData;
 
-	[FieldOffset(672)]
+	[FieldOffset(800)]
 	public nint UiRootPtr;
 
-	[FieldOffset(1384)]
+	[FieldOffset(1512)]
 	public nint IngameUi;
 }

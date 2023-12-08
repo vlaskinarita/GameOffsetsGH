@@ -18,16 +18,16 @@ public struct StatusEffectStruct
 	[FieldOffset(40)]
 	public uint SourceEntityId;
 
-	[FieldOffset(62)]
+	[FieldOffset(66)]
 	public short Charges;
 
-	[FieldOffset(64)]
+	[FieldOffset(68)]
 	public short FlaskSlot;
 
-	[FieldOffset(66)]
+	[FieldOffset(70)]
 	public short Effectiveness;
 
-	[FieldOffset(70)]
+	[FieldOffset(74)]
 	public uint UnknownIdAndEquipmentInfo;
 
 	public override string ToString()

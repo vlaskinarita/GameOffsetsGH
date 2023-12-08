@@ -9,12 +9,12 @@ public struct RenderOffsets
 	[FieldOffset(0)]
 	public ComponentHeader Header;
 
-	[FieldOffset(160)]
+	[FieldOffset(168)]
 	public StdTuple3D<float> CurrentWorldPosition;
 
-	[FieldOffset(172)]
+	[FieldOffset(180)]
 	public StdTuple3D<float> CharactorModelBounds;
 
-	[FieldOffset(260)]
+	[FieldOffset(268)]
 	public float TerrainHeight;
 }

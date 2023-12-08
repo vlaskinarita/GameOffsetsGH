@@ -8,6 +8,6 @@ public struct SkillTreeNodeUiElementOffset
 	[FieldOffset(0)]
 	public UiElementBaseOffset UiElementBase;
 
-	[FieldOffset(488)]
+	[FieldOffset(504)]
 	public nint SkillInfo;
 }

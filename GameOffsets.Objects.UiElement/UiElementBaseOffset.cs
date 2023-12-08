@@ -19,26 +19,23 @@ public struct UiElementBaseOffset
 	public StdTuple2D<float> PositionModifier;
 
 	[FieldOffset(176)]
-	public StdWString Id;
-
-	[FieldOffset(210)]
 	public byte ScaleIndex;
 
-	[FieldOffset(224)]
+	[FieldOffset(192)]
 	public nint ParentPtr;
 
-	[FieldOffset(232)]
+	[FieldOffset(200)]
 	public StdTuple2D<float> RelativePosition;
 
-	[FieldOffset(256)]
+	[FieldOffset(224)]
 	public float LocalScaleMultiplier;
 
-	[FieldOffset(352)]
+	[FieldOffset(324)]
 	public uint Flags;
 
-	[FieldOffset(384)]
+	[FieldOffset(400)]
 	public StdTuple2D<float> UnscaledSize;
 
-	[FieldOffset(444)]
+	[FieldOffset(460)]
 	public uint BackgroundColor;
 }

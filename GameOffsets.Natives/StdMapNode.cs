@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Natives;
@@ -6,11 +5,11 @@ namespace GameOffsets.Natives;
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
 public struct StdMapNode<TKey, TValue> where TKey : struct where TValue : struct
 {
-	public IntPtr Left;
+	public nint Left;
 
-	public IntPtr Parent;
+	public nint Parent;
 
-	public IntPtr Right;
+	public nint Right;
 
 	public byte Color;
 

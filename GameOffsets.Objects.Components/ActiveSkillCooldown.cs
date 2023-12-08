@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -23,7 +22,7 @@ public struct ActiveSkillCooldown
 	public StdVector CooldownsList;
 
 	[FieldOffset(40)]
-	public IntPtr PtrToActorComponentPlusOffset;
+	public nint PtrToActorComponentPlusOffset;
 
 	[FieldOffset(48)]
 	public int MaxUses;

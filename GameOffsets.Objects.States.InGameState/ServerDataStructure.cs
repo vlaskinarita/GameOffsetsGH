@@ -8,6 +8,6 @@ public struct ServerDataStructure
 {
 	public const int SKIP = 40704;
 
-	[FieldOffset(1008)]
+	[FieldOffset(1136)]
 	public StdVector PlayerInventories;
 }

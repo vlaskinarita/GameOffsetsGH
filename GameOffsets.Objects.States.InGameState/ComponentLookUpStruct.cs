@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -8,10 +7,10 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct ComponentLookUpStruct
 {
 	[FieldOffset(0)]
-	public IntPtr Unknown0;
+	public nint Unknown0;
 
 	[FieldOffset(8)]
-	public IntPtr Unknown1;
+	public nint Unknown1;
 
 	[FieldOffset(16)]
 	public StdVector Unknown2;

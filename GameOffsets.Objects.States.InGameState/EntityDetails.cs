@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -11,5 +10,5 @@ public struct EntityDetails
 	public StdWString name;
 
 	[FieldOffset(48)]
-	public IntPtr ComponentLookUpPtr;
+	public nint ComponentLookUpPtr;
 }

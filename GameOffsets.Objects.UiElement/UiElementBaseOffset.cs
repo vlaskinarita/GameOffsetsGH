@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -8,10 +7,10 @@ namespace GameOffsets.Objects.UiElement;
 public struct UiElementBaseOffset
 {
 	[FieldOffset(0)]
-	public IntPtr Vtable;
+	public nint Vtable;
 
 	[FieldOffset(40)]
-	public IntPtr Self;
+	public nint Self;
 
 	[FieldOffset(48)]
 	public StdVector ChildrensPtr;
@@ -26,7 +25,7 @@ public struct UiElementBaseOffset
 	public byte ScaleIndex;
 
 	[FieldOffset(224)]
-	public IntPtr ParentPtr;
+	public nint ParentPtr;
 
 	[FieldOffset(232)]
 	public StdTuple2D<float> RelativePosition;

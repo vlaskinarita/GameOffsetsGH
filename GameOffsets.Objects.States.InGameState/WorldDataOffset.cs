@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.States.InGameState;
@@ -7,7 +6,7 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct WorldDataOffset
 {
 	[FieldOffset(160)]
-	public IntPtr WorldAreaDetailsPtr;
+	public nint WorldAreaDetailsPtr;
 
 	[FieldOffset(168)]
 	public CameraStructure CameraStructurePtr;

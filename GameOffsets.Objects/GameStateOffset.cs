@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -11,38 +10,38 @@ public struct GameStateOffset
 	public StdVector CurrentStatePtr;
 
 	[FieldOffset(72)]
-	public IntPtr State0;
+	public nint State0;
 
 	[FieldOffset(88)]
-	public IntPtr State1;
+	public nint State1;
 
 	[FieldOffset(104)]
-	public IntPtr State2;
+	public nint State2;
 
 	[FieldOffset(120)]
-	public IntPtr State3;
+	public nint State3;
 
 	[FieldOffset(136)]
-	public IntPtr State4;
+	public nint State4;
 
 	[FieldOffset(152)]
-	public IntPtr State5;
+	public nint State5;
 
 	[FieldOffset(168)]
-	public IntPtr State6;
+	public nint State6;
 
 	[FieldOffset(184)]
-	public IntPtr State7;
+	public nint State7;
 
 	[FieldOffset(200)]
-	public IntPtr State8;
+	public nint State8;
 
 	[FieldOffset(216)]
-	public IntPtr State9;
+	public nint State9;
 
 	[FieldOffset(232)]
-	public IntPtr State10;
+	public nint State10;
 
 	[FieldOffset(248)]
-	public IntPtr State11;
+	public nint State11;
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.FilesStructures;
@@ -7,5 +6,5 @@ namespace GameOffsets.Objects.FilesStructures;
 public struct GrantedEffectsDatOffset
 {
 	[FieldOffset(99)]
-	public IntPtr ActiveSkillDatPtr;
+	public nint ActiveSkillDatPtr;
 }

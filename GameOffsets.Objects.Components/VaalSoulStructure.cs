@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -7,10 +6,10 @@ namespace GameOffsets.Objects.Components;
 public struct VaalSoulStructure
 {
 	[FieldOffset(0)]
-	public IntPtr ActiveSkillsDatPtr;
+	public nint ActiveSkillsDatPtr;
 
 	[FieldOffset(8)]
-	public IntPtr UselessPtr;
+	public nint UselessPtr;
 
 	[FieldOffset(16)]
 	public int RequiredSouls;

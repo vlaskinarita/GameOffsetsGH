@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -10,5 +9,5 @@ public struct StatsOffsets
 	public ComponentHeader Header;
 
 	[FieldOffset(32)]
-	public IntPtr StatsDataPtr;
+	public nint StatsDataPtr;
 }

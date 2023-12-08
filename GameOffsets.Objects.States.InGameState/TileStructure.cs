@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -7,13 +6,13 @@ namespace GameOffsets.Objects.States.InGameState;
 [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 56)]
 public struct TileStructure
 {
-	public IntPtr SubTileDetailsPtr;
+	public nint SubTileDetailsPtr;
 
-	public IntPtr TgtFilePtr;
+	public nint TgtFilePtr;
 
 	public StdVector EntitiesList;
 
-	public IntPtr PAD_0x28;
+	public nint PAD_0x28;
 
 	public short TileHeight;
 

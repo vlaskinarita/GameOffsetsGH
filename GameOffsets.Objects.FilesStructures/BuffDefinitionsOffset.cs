@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.FilesStructures;
@@ -7,7 +6,7 @@ namespace GameOffsets.Objects.FilesStructures;
 public struct BuffDefinitionsOffset
 {
 	[FieldOffset(0)]
-	public IntPtr Name;
+	public nint Name;
 
 	[FieldOffset(103)]
 	public byte BuffType;

@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.FilesStructures;
@@ -7,10 +6,10 @@ namespace GameOffsets.Objects.FilesStructures;
 public struct WorldAreaDatOffsets
 {
 	[FieldOffset(0)]
-	public IntPtr IdPtr;
+	public nint IdPtr;
 
 	[FieldOffset(8)]
-	public IntPtr NamePtr;
+	public nint NamePtr;
 
 	[FieldOffset(16)]
 	public int Act;

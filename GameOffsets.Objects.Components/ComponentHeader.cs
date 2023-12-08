@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -7,8 +6,8 @@ namespace GameOffsets.Objects.Components;
 public struct ComponentHeader
 {
 	[FieldOffset(0)]
-	public IntPtr StaticPtr;
+	public nint StaticPtr;
 
 	[FieldOffset(8)]
-	public IntPtr EntityPtr;
+	public nint EntityPtr;
 }

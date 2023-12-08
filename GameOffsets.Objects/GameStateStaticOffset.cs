@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects;
@@ -7,5 +6,5 @@ namespace GameOffsets.Objects;
 public struct GameStateStaticOffset
 {
 	[FieldOffset(0)]
-	public IntPtr GameState;
+	public nint GameState;
 }

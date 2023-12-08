@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.States.InGameState;
@@ -13,10 +12,10 @@ public struct InventoryArrayStruct
 	public int PAD_0;
 
 	[FieldOffset(8)]
-	public IntPtr InventoryPtr0;
+	public nint InventoryPtr0;
 
 	[FieldOffset(16)]
-	public IntPtr InventoryPtr1;
+	public nint InventoryPtr1;
 
 	[FieldOffset(24)]
 	public long PAD_1;

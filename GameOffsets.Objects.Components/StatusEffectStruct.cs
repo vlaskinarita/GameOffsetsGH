@@ -7,7 +7,7 @@ namespace GameOffsets.Objects.Components;
 public struct StatusEffectStruct
 {
 	[FieldOffset(8)]
-	public IntPtr BuffDefinationPtr;
+	public nint BuffDefinationPtr;
 
 	[FieldOffset(24)]
 	public float TotalTime;
@@ -32,6 +32,6 @@ public struct StatusEffectStruct
 
 	public override string ToString()
 	{
-		return $"BuffDefinationPtr: {BuffDefinationPtr.ToInt64():X} Total Time: {TotalTime} Time Left: {TimeLeft} Entity Id: {SourceEntityId} Charges: {Charges} Flask Slot: {FlaskSlot} Effectiveness: {100 + Effectiveness} (raw: {Effectiveness}) UnknownIdAndEquipmentInfo: {UnknownIdAndEquipmentInfo:X}";
+		return $"BuffDefinationPtr: {((IntPtr)BuffDefinationPtr).ToInt64():X} Total Time: {TotalTime} Time Left: {TimeLeft} Entity Id: {SourceEntityId} Charges: {Charges} Flask Slot: {FlaskSlot} Effectiveness: {100 + Effectiveness} (raw: {Effectiveness}) UnknownIdAndEquipmentInfo: {UnknownIdAndEquipmentInfo:X}";
 	}
 }

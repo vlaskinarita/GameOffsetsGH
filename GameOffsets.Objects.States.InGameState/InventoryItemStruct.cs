@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -8,7 +7,7 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct InventoryItemStruct
 {
 	[FieldOffset(0)]
-	public IntPtr Item;
+	public nint Item;
 
 	[FieldOffset(8)]
 	public StdTuple2D<int> SlotStart;

@@ -1,4 +1,3 @@
-using System;
 using System.Numerics;
 using System.Runtime.InteropServices;
 
@@ -8,7 +7,7 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct CameraStructure
 {
 	[FieldOffset(0)]
-	public IntPtr CodePtr;
+	public nint CodePtr;
 
 	[FieldOffset(320)]
 	public Matrix4x4 WorldToScreenMatrix;

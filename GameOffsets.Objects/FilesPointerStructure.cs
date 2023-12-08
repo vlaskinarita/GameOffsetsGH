@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects;
@@ -6,9 +5,9 @@ namespace GameOffsets.Objects;
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
 public struct FilesPointerStructure
 {
-	public IntPtr Useless0;
+	public nint Useless0;
 
-	public IntPtr FilesPointer;
+	public nint FilesPointer;
 
-	public IntPtr Useless1;
+	public nint Useless1;
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -14,8 +13,8 @@ public struct ModArrayStruct
 	public int Value0;
 
 	[FieldOffset(40)]
-	public IntPtr ModsPtr;
+	public nint ModsPtr;
 
 	[FieldOffset(48)]
-	public IntPtr Unknown0;
+	public nint Unknown0;
 }

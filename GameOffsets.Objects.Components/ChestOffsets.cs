@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -10,7 +9,7 @@ public struct ChestOffsets
 	public ComponentHeader Header;
 
 	[FieldOffset(352)]
-	public IntPtr ChestsDataPtr;
+	public nint ChestsDataPtr;
 
 	[FieldOffset(360)]
 	public bool IsOpened;

@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 using GameOffsets.Natives;
 
@@ -8,10 +7,10 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct ItemStruct
 {
 	[FieldOffset(0)]
-	public IntPtr VTablePtr;
+	public nint VTablePtr;
 
 	[FieldOffset(8)]
-	public IntPtr EntityDetailsPtr;
+	public nint EntityDetailsPtr;
 
 	[FieldOffset(16)]
 	public StdVector ComponentListPtr;

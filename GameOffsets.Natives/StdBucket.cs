@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Natives;
@@ -8,7 +7,7 @@ public struct StdBucket
 {
 	public long PAD_00;
 
-	public IntPtr Data;
+	public nint Data;
 
 	public long Capacity;
 

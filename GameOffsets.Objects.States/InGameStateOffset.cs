@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.States;
@@ -7,14 +6,14 @@ namespace GameOffsets.Objects.States;
 public struct InGameStateOffset
 {
 	[FieldOffset(24)]
-	public IntPtr AreaInstanceData;
+	public nint AreaInstanceData;
 
 	[FieldOffset(120)]
-	public IntPtr WorldData;
+	public nint WorldData;
 
 	[FieldOffset(672)]
-	public IntPtr UiRootPtr;
+	public nint UiRootPtr;
 
 	[FieldOffset(1384)]
-	public IntPtr IngameUi;
+	public nint IngameUi;
 }

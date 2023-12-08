@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -10,7 +9,7 @@ public struct ChargesOffsets
 	public ComponentHeader Header;
 
 	[FieldOffset(16)]
-	public IntPtr ChargesInternalPtr;
+	public nint ChargesInternalPtr;
 
 	[FieldOffset(24)]
 	public int current;

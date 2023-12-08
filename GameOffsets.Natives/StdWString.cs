@@ -6,9 +6,9 @@ namespace GameOffsets.Natives;
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
 public struct StdWString
 {
-	public IntPtr Buffer;
+	public nint Buffer;
 
-	public IntPtr ReservedBytes;
+	public nint ReservedBytes;
 
 	public int Length;
 
@@ -20,6 +20,6 @@ public struct StdWString
 
 	public override string ToString()
 	{
-		return $"Buffer: {Buffer.ToInt64():X}, ReservedBytes: {ReservedBytes.ToInt64():X}, Length: {Length}, Capacity: {Capacity}";
+		return $"Buffer: {((IntPtr)Buffer).ToInt64():X}, ReservedBytes: {((IntPtr)ReservedBytes).ToInt64():X}, Length: {Length}, Capacity: {Capacity}";
 	}
 }

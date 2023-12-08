@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -16,13 +15,13 @@ public struct ActiveSkillDetails
 	public uint UnknownIdAndEquipmentInfo;
 
 	[FieldOffset(24)]
-	public IntPtr GrantedEffectsPerLevelDatRow;
+	public nint GrantedEffectsPerLevelDatRow;
 
 	[FieldOffset(32)]
-	public IntPtr ActiveSkillsDatPtr;
+	public nint ActiveSkillsDatPtr;
 
 	[FieldOffset(48)]
-	public IntPtr GrantedEffectStatSetsPerLevelDatRow;
+	public nint GrantedEffectStatSetsPerLevelDatRow;
 
 	[FieldOffset(128)]
 	public bool CanBeUsedWithWeapon;

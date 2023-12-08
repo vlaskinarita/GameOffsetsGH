@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.Components;
@@ -10,5 +9,5 @@ public struct ChestsStructInternal
 	public bool IsLabelVisible;
 
 	[FieldOffset(80)]
-	public IntPtr StrongboxDatPtr;
+	public nint StrongboxDatPtr;
 }

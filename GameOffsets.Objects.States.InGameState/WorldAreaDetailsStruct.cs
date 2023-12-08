@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.States.InGameState;
@@ -7,5 +6,5 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct WorldAreaDetailsStruct
 {
 	[FieldOffset(136)]
-	public IntPtr WorldAreaDetailsRowPtr;
+	public nint WorldAreaDetailsRowPtr;
 }

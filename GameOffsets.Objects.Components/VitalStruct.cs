@@ -7,10 +7,10 @@ namespace GameOffsets.Objects.Components;
 public struct VitalStruct
 {
 	[FieldOffset(0)]
-	public IntPtr VtablePtr;
+	public nint VtablePtr;
 
 	[FieldOffset(8)]
-	public IntPtr PtrToLifeComponent;
+	public nint PtrToLifeComponent;
 
 	[FieldOffset(16)]
 	public int ReservedFlat;

@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.InteropServices;
 
 namespace GameOffsets.Objects.States.InGameState;
@@ -7,8 +6,14 @@ namespace GameOffsets.Objects.States.InGameState;
 public struct ImportantUiElementsOffsets
 {
 	[FieldOffset(1128)]
-	public IntPtr ChatParentPtr;
+	public nint ChatParentPtr;
+
+	[FieldOffset(1400)]
+	public nint PassiveSkillTreePanel;
 
 	[FieldOffset(1544)]
-	public IntPtr MapParentPtr;
+	public nint MapParentPtr;
+
+	[FieldOffset(1904)]
+	public nint ControllerModeMapParentPtr;
 }

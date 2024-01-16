@@ -14,6 +14,6 @@ public struct ImportantUiElementsOffsets
 	[FieldOffset(1560)]
 	public nint MapParentPtr;
 
-	[FieldOffset(1928)]
+	[FieldOffset(1936)]
 	public nint ControllerModeMapParentPtr;
 }

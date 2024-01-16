@@ -22,15 +22,15 @@ public struct UiElementBaseOffset
 	public byte ScaleIndex;
 
 	[FieldOffset(192)]
-	public nint ParentPtr;
-
-	[FieldOffset(200)]
 	public StdTuple2D<float> RelativePosition;
 
-	[FieldOffset(224)]
+	[FieldOffset(216)]
 	public float LocalScaleMultiplier;
 
-	[FieldOffset(324)]
+	[FieldOffset(320)]
+	public nint ParentPtr;
+
+	[FieldOffset(328)]
 	public uint Flags;
 
 	[FieldOffset(400)]

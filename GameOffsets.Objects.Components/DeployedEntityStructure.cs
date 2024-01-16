@@ -5,16 +5,18 @@ namespace GameOffsets.Objects.Components;
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
 public struct DeployedEntityStructure
 {
-	public ushort DeployedObjectType;
+	public int EntityId;
 
 	public ushort ActiveSkillsDatId;
 
-	public ushort EntityId;
+	public ushort PAD_0x0C;
 
-	public ushort Pad_0x06;
+	public ushort DeployedObjectType;
+
+	public ushort PAD_0x014;
 
 	public override string ToString()
 	{
-		return $"{DeployedObjectType} - {ActiveSkillsDatId} - {EntityId} - {Pad_0x06}";
+		return $"{DeployedObjectType} - {ActiveSkillsDatId} - {EntityId}";
 	}
 }

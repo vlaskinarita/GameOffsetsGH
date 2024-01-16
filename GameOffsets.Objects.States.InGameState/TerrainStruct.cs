@@ -22,7 +22,7 @@ public struct TerrainStruct
 	public int BytesPerRow;
 
 	[FieldOffset(260)]
-	public int TileHeightMultiplier;
+	public short TileHeightMultiplier;
 
 	public static float TileHeightFinalMultiplier = 7.8125f;
 }

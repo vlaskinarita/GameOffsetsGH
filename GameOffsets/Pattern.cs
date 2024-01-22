@@ -17,31 +17,31 @@ public struct Pattern
 
 	private static (byte[], bool[]) ParseArrayOfHexBytes(List<string> arrayOfHexBytes)
 	{
-		List<bool> mask = new List<bool>();
-		List<byte> data = new List<byte>();
+		List<bool> list = new List<bool>();
+		List<byte> list2 = new List<byte>();
 		for (int i = 0; i < arrayOfHexBytes.Count; i++)
 		{
-			string hexByte = arrayOfHexBytes[i];
-			if (hexByte.StartsWith("?"))
+			string text = arrayOfHexBytes[i];
+			if (text.StartsWith("?"))
 			{
-				data.Add(0);
-				mask.Add(item: false);
+				list2.Add(0);
+				list.Add(item: false);
 			}
 			else
 			{
-				data.Add(byte.Parse(hexByte, NumberStyles.HexNumber));
-				mask.Add(item: true);
+				list2.Add(byte.Parse(text, NumberStyles.HexNumber));
+				list.Add(item: true);
 			}
 		}
-		return (data.ToArray(), mask.ToArray());
+		return (list2.ToArray(), list.ToArray());
 	}
 
 	public Pattern(string name, string arrayOfHexBytes)
 	{
 		Name = name;
-		List<string> arrayOfHexBytesList = arrayOfHexBytes.Split(new string[2] { " ", "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
-		BytesToSkip = arrayOfHexBytesList.FindIndex("^".Equals);
-		(Data, Mask) = ParseArrayOfHexBytes(arrayOfHexBytesList.Where((string hex) => hex != "^").ToList());
+		List<string> list = arrayOfHexBytes.Split(new string[2] { " ", "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
+		BytesToSkip = list.FindIndex("^".Equals);
+		(Data, Mask) = ParseArrayOfHexBytes(list.Where((string hex) => hex != "^").ToList());
 	}
 
 	public Pattern(string name, string arrayOfHexBytes, int bytesToSkip)
@@ -53,11 +53,11 @@ public struct Pattern
 
 	public override string ToString()
 	{
-		string data = "Name: " + Name + " Pattern: ";
+		string text = "Name: " + Name + " Pattern: ";
 		for (int i = 0; i < Data.Length; i++)
 		{
-			data = ((!Mask[i]) ? (data + "?? ") : (data + $"0x{Data[i]:X} "));
+			text = ((!Mask[i]) ? (text + "?? ") : (text + $"0x{Data[i]:X} "));
 		}
-		return data + $"BytesToSkip: {BytesToSkip}";
+		return text + $"BytesToSkip: {BytesToSkip}";
 	}
 }

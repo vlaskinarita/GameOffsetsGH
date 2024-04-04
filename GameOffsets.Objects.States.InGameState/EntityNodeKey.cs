@@ -16,9 +16,9 @@ public struct EntityNodeKey
 
 	public override bool Equals(object ob)
 	{
-		if (ob is EntityNodeKey entityNodeKey)
+		if (ob is EntityNodeKey c)
 		{
-			return id == entityNodeKey.id;
+			return id == c.id;
 		}
 		return false;
 	}

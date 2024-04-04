@@ -8,6 +8,6 @@ public struct AnimatedOffsets
 	[FieldOffset(0)]
 	public ComponentHeader Header;
 
-	[FieldOffset(560)]
+	[FieldOffset(592)]
 	public nint AnimatedEntityPtr;
 }

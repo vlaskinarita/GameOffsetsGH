@@ -15,7 +15,7 @@ public struct DeployedEntityStructure
 
 	public ushort PAD_0x014;
 
-	public override string ToString()
+	public override readonly string ToString()
 	{
 		return $"{DeployedObjectType} - {ActiveSkillsDatId} - {EntityId}";
 	}

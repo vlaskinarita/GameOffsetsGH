@@ -5,17 +5,19 @@ namespace GameOffsets.Natives;
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
 public struct StdBucket
 {
-	public long PAD_00;
+	public StdVector Data;
 
-	public nint Data;
+	public nint UnknownPtr;
 
-	public long Capacity;
+	public int Capacity;
+
+	public int PAD_0x24;
+
+	public int Unknown1;
+
+	public int PAD_0x2C;
+
+	public int Unknown2;
 
 	public int Unknown3;
-
-	public float Unknown4;
-
-	public int PAD_20;
-
-	public int PAD_24;
 }

@@ -9,18 +9,18 @@ public struct ActorOffset
 	[FieldOffset(0)]
 	public ComponentHeader Header;
 
-	[FieldOffset(572)]
+	[FieldOffset(584)]
 	public int AnimationId;
 
-	[FieldOffset(1728)]
+	[FieldOffset(1776)]
 	public StdVector ActiveSkillsPtr;
 
-	[FieldOffset(1752)]
+	[FieldOffset(1800)]
 	public StdVector CooldownsPtr;
 
-	[FieldOffset(1776)]
+	[FieldOffset(1824)]
 	public StdVector VaalSoulsPtr;
 
-	[FieldOffset(1800)]
+	[FieldOffset(1848)]
 	public StdVector DeployedEntityArray;
 }

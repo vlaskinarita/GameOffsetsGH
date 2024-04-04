@@ -36,6 +36,6 @@ public struct UiElementBaseOffset
 	[FieldOffset(400)]
 	public StdTuple2D<float> UnscaledSize;
 
-	[FieldOffset(460)]
+	[FieldOffset(468)]
 	public uint BackgroundColor;
 }

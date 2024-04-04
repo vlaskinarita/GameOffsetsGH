@@ -6,21 +6,21 @@ namespace GameOffsets.Objects.States.InGameState;
 [StructLayout(LayoutKind.Explicit, Pack = 1)]
 public struct AreaInstanceOffsets
 {
-	[FieldOffset(212)]
+	[FieldOffset(204)]
 	public byte CurrentAreaLevel;
 
-	[FieldOffset(276)]
+	[FieldOffset(268)]
 	public uint CurrentAreaHash;
 
-	[FieldOffset(2112)]
+	[FieldOffset(2232)]
 	public StdVector Environments;
 
-	[FieldOffset(2160)]
+	[FieldOffset(2280)]
 	public LocalPlayerStruct PlayerInfo;
 
-	[FieldOffset(2344)]
+	[FieldOffset(2464)]
 	public EntityListStruct Entities;
 
-	[FieldOffset(2768)]
+	[FieldOffset(2896)]
 	public TerrainStruct TerrainMetadata;
 }

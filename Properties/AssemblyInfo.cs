@@ -6,7 +6,7 @@ using System.Runtime.Versioning;
 [assembly: AssemblyCompany("GameOffsets")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: AssemblyInformationalVersion("1.0.0+372fd62fa9cd811fa77796cde65b39d5344a0282")]
+[assembly: AssemblyInformationalVersion("1.0.0+207a8859717f4b5532e025c9462e95c0a83346ec")]
 [assembly: AssemblyProduct("GameOffsets")]
 [assembly: AssemblyTitle("GameOffsets")]
 [assembly: AssemblyVersion("1.0.0.0")]

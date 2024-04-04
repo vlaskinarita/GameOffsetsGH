@@ -6,12 +6,12 @@ namespace GameOffsets.Objects.States;
 [StructLayout(LayoutKind.Explicit, Pack = 1)]
 public struct AreaLoadingStateOffset
 {
-	[FieldOffset(328)]
+	[FieldOffset(840)]
 	public int IsLoading;
 
-	[FieldOffset(1024)]
+	[FieldOffset(1536)]
 	public uint TotalLoadingScreenTimeMs;
 
-	[FieldOffset(1088)]
+	[FieldOffset(1600)]
 	public StdWString CurrentAreaName;
 }

@@ -9,12 +9,12 @@ public struct MapUiElementOffset
 	[FieldOffset(0)]
 	public UiElementBaseOffset UiElementBase;
 
-	[FieldOffset(640)]
+	[FieldOffset(648)]
 	public StdTuple2D<float> Shift;
 
-	[FieldOffset(648)]
+	[FieldOffset(656)]
 	public StdTuple2D<float> DefaultShift;
 
-	[FieldOffset(708)]
+	[FieldOffset(716)]
 	public float Zoom;
 }

@@ -5,15 +5,15 @@ namespace GameOffsets.Objects.States;
 [StructLayout(LayoutKind.Explicit, Pack = 1)]
 public struct InGameStateOffset
 {
-	[FieldOffset(24)]
+	[FieldOffset(536)]
 	public nint AreaInstanceData;
 
-	[FieldOffset(120)]
+	[FieldOffset(632)]
 	public nint WorldData;
 
-	[FieldOffset(800)]
+	[FieldOffset(1312)]
 	public nint UiRootPtr;
 
-	[FieldOffset(1512)]
+	[FieldOffset(2024)]
 	public nint IngameUi;
 }

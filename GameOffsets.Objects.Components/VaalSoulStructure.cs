@@ -20,7 +20,7 @@ public struct VaalSoulStructure
 	[FieldOffset(24)]
 	public long PAD_0x18;
 
-	public bool CannotBeUsed()
+	public readonly bool CannotBeUsed()
 	{
 		return CurrentSouls < RequiredSouls;
 	}
